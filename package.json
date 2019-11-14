@@ -1,0 +1,36 @@
+{
+  "name": "js-adagrams",
+  "version": "1.0.0",
+  "description": "JavaScript version of the Adagrams project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "open coverage/lcov-report/index.html",
+    "game": "babel-node src/game.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AdaGold/js-adagrams.git"
+  },
+  "author": "Ada Developers Academy <contact@adadevelopersacademy.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdaGold/js-adagrams/issues"
+  },
+  "homepage": "https://github.com/AdaGold/js-adagrams#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.5",
+    "@babel/node": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.5",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "jest": "^23.6.0",
+    "regenerator-runtime": "^0.12.1"
+  },
+  "dependencies": {
+    "vorpal": "^1.12.0"
+  }
+}
