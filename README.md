@@ -1,6 +1,6 @@
 # Intern-grams
 
-The following project was taken from Ada Dev Academy's open sourced curriculum and used with permmision.  It is for the purpose of demonstrating knowledge gained over the last 3 months of self guided learning with a little help from the engineers. 
+The following project was taken from Ada Dev Academy's open sourced curriculum and used with permission.  It is for the purpose of demonstrating knowledge gained over the last 3 months of self guided learning with a little help from the engineers. 
 
 ## Introduction
 In this project you will build the same Adagrams project from the Ruby curriculum using JavaScript running on Node.js in your terminal. Please review [the original project](https://github.com/AdaGold/adagrams#readme) for an explanation of the Adagrams game design.
