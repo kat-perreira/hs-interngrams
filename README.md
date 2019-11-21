@@ -121,7 +121,110 @@ Our first job is to build a hand of 10 letters. To do so, add a function called 
 | L : 4  | Y : 2 |
 | M : 2  | Z : 1 |
 
-**Note:** Making sure that the drawn letters match the rules of the letter pool can be straightforward or very difficult, depending on how you build the data structure for the letter pool. It is worth spending some time with your partner to think carefully about this.
+**Note:** Making a data pool of letters is work that I think is not essential to a part of this exercise, so i'm just going to give you all of this data in an array. After you complete the waves, feel free to go back to write a function or something that populates an array with all of the letters in it
+copy and paste this array into the Adagrams object:
+```
+  letterArray: [
+    "A",
+    "A",
+    "A",
+    "A",
+    "A",
+    "A",
+    "A",
+    "A",
+    "A",
+    "B",
+    "B",
+    "C",
+    "C",
+    "D",
+    "D",
+    "D",
+    "D",
+    "E",
+    "E",
+    "E",
+    "E",
+    "E",
+    "E",
+    "E",
+    "E",
+    "E",
+    "E",
+    "E",
+    "E",
+    "F",
+    "F",
+    "G",
+    "G",
+    "G",
+    "H",
+    "H",
+    "I",
+    "I",
+    "I",
+    "I",
+    "I",
+    "I",
+    "I",
+    "I",
+    "I",
+    "J",
+    "K",
+    "L",
+    "L",
+    "L",
+    "L",
+    "M",
+    "M",
+    "N",
+    "N",
+    "N",
+    "N",
+    "N",
+    "N",
+    "O",
+    "O",
+    "O",
+    "O",
+    "O",
+    "O",
+    "O",
+    "O",
+    "P",
+    "P",
+    "Q",
+    "R",
+    "R",
+    "R",
+    "R",
+    "R",
+    "R",
+    "S",
+    "S",
+    "S",
+    "S",
+    "T",
+    "T",
+    "T",
+    "T",
+    "T",
+    "T",
+    "U",
+    "U",
+    "U",
+    "U",
+    "V",
+    "V",
+    "W",
+    "W",
+    "X",
+    "Y", 
+    "Y",
+    "Z"
+  ]
+```
 
 
 ### Wave 2
@@ -157,6 +260,39 @@ Name this function `scoreWord` in `src/adagrams.js`. This method should have the
 |K                             |   5  |
 |J, X                          |   8  |
 |Q, Z                          |   10 |
+
+***Note:*** Same as above, you could spend some time writing out a function to populate an object but since I think that takes away from the point of the project, here is an object populated with the letter scores, copy and paste in in a place you feel is appropriate 
+
+```
+const letterScores = {
+      A: 1,
+      E: 1,
+      I: 1,
+      O: 1,
+      U: 1,
+      L: 1,
+      N: 1,
+      R: 1,
+      S: 1,
+      T: 1,
+      D: 2,
+      G: 2,
+      B: 3,
+      C: 3,
+      M: 3,
+      P: 3,
+      F: 4,
+      H: 4,
+      V: 4,
+      W: 4,
+      Y: 4,
+      K: 5,
+      J: 8,
+      X: 8,
+      Q: 10,
+      Z: 10
+    };
+```
 
 ### Wave 4
 After several hands have been drawn, words have been submitted, checked, scored, and played, we want a way to find the highest scoring word. This function looks at the array of `words` and calculates which of these words has the highest score, applies any tie-breaking logic, and returns the winning word in a special data structure.
